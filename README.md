@@ -41,8 +41,14 @@ The objective is to dynamicaly generate a banner in streaming live from a web vi
  - Nodered configuration
    - Go to "Banner Web Page" node
    - On line 30 replace "YOUR_NODERED_IP" by your nodered server IP
+   - Click "Done"
+   - You may have to modify the "Dashboard" layout to place button and text-input correctly. See the officiel documentation : https://flows.nodered.org/node/node-red-dashboard
 
  - Using
+   - Go to http://YOUR_NODERED_IP:1880/ui (you can also integrate it in an OBS dock)
+   - In OBS create a browser source with URL : http://YOUR_NODERED_IP:1880/banner ; width : 1920 (minimum, to reduce it put more and resize the object); height : 100
+   - Set text in input text, click button "BANNER ON" to display it, clikc "BANNER OFF" to hide it
+   - Text is update only on display, so you can change it in text input when banner is alread display to prevent next message
 
  - Credit
  Create by tainalo2 : french streamer on twitch every week day from 07H to 09H (Paris hours)
